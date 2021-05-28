@@ -1,0 +1,136 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  padding: 14px 20px;
+  justify-content: space-between;
+  font-size: 1em;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* BUTTONS */
+
+.button {
+  font-size: 4em;
+  font-weight: 900;
+  margin: 40px 45vw;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+
+#intro > .button {
+  margin-top: 30vh;
+}
+
+.gobutton {
+  font-size: 1em;
+  font-weight: 700;
+  margin: 10px 30%;
+  padding: 10px 0;
+  width: 40%;
+  border-radius: 20px;
+  background: #fff;
+}
+
+/* GENRAL COLORS */
+
+#blue #intro, #blue #error, #blue .listbox {
+  background: #0377fc;
+}
+
+#green #intro, #green #error, #green .listbox {
+  background: #01e308;
+}
+
+#red #intro, #red #error, #red .listbox {
+  background: #fc3903;
+}
+
+#purple #intro, #purple #error, #purple .listbox {
+  background: #ca03fc;
+}
+
+#aqua #intro, #aqua #error, #aqua .listbox {
+  background: #01dbb6;
+}
+
+#orange #intro, #orange #error, #orange .listbox {
+  background: #ffa500;
+}
+
+/* BORDER COLORS */
+
+#blue .textblock, #blue .gobutton {
+  border: 4px solid #0377fc;
+}
+
+#green .textblock, #green .gobutton {
+  border: 4px solid #01e308;
+}
+
+#red .textblock, #red .gobutton {
+  border: 4px solid #fc3903;
+}
+
+#purple .textblock, #purple .gobutton {
+  border: 4px solid #ca03fc;
+}
+
+#aqua .textblock, #aqua .gobutton {
+  border: 4px solid #01dbb6;
+}
+
+#orange .textblock, #orange .gobutton {
+  border: 4px solid #ffa500;
+}
+
+/* MEDIA */
+
+@media only screen and (max-height: 600px) {
+  #intro > .button {
+    margin-top: 20vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    font-size: 0.8em;
+  }
+}

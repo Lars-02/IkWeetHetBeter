@@ -1,0 +1,71 @@
+#contact {
+  clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 50% 80%, 0% 100%, 0% 20%);
+  background: #0377fc;
+  text-align: center;
+  margin: 40px 16vw;
+  padding: 30vh 0 40vh 0;
+}
+
+#contact > div {
+  background: #fff;
+  margin: 20px 8vw;
+  padding: 20px 40px;
+  border-radius: 40px;
+}
+
+#contact > div > div {
+  margin: 40px 0;
+}
+
+input {
+  background: #fff;
+  border: none;
+  border-bottom: 2px solid #0377fc;
+  width: 80%;
+  height: 20px;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+  width: 80%;
+  height: 100px;
+  text-align: left;
+  border: none;
+  border-bottom: 2px solid #0377fc;
+  font-size: 0.8em;
+}
+
+#submit {
+  border: 3px solid #0377fc;
+  margin: 20px 0;
+  border-radius: 20px;
+  background: #fff;
+  font-size: 1em;
+  font-weight: 800;
+  height: 50px;
+}
+
+#submit:hover {
+  background: #0377fc;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  #contact {
+    padding: 25vh 0;
+    margin: 40px 4vw;
+    clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 50% 90%, 0% 100%, 0% 10%);
+  }
+  #contact > div {
+    margin: 20px 4vw;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  #contact {
+    clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 50% 95%, 0% 100%, 0% 5%);
+  }
+}

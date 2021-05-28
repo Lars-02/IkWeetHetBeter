@@ -1,0 +1,102 @@
+/* GENERAL BLOCK */
+
+.textblock {
+  text-align: center;
+  margin: 60px 10vw;
+  border-radius: 25px;
+  padding: 2vh 5vw;
+}
+
+.imgtext {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imgtext > img {
+  height: 30vh;
+  max-height: 200px;
+  width: auto;
+}
+
+.textblock > h1 {
+  height: 10%;
+  padding: 10px 0 20px 0;
+}
+
+p {
+  padding: 10px;
+}
+
+/* INFO BLOCK */
+
+#info {
+  min-height: calc(100vh - 44px - 47.2px - 20vh);
+  margin: 0;
+  padding: 40vh 10vw;
+  clip-path: polygon(0 4%, 50% 8%, 100% 4%, 100% 96%, 50% 92%, 0 96%);
+  border: 0;
+  border-radius: 20px;
+}
+
+#info > .textblock {
+  background: #fff;
+}
+
+#blue #info {
+  background: #0377fc;
+}
+
+/* ERROR BLOCK */
+
+#error {
+  clip-path: polygon(5% 30%, 50% 10%, 95% 30%, 95% 70%, 50% 90%, 5% 70%);
+}
+
+#error > .textblock {
+  margin: 0;
+  padding: 20vh 10vw;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+}
+
+#error > div > img {
+  width: 10vw;
+  height: auto;
+}
+
+/* INTRO BLOCK */
+#intro {
+  /* Height calc: Screen - Header - Nav - Padding */
+  height: calc(100vh - 44px - 47.2px - 20vh);
+  margin: 0;
+  padding: 20vh 0 0 0;
+  clip-path: polygon(0% 10%, 100% 4%, 100% 90%, 0% 96%);
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+}
+
+/* SCREEN BLOCK */
+
+@media only screen and (max-width: 800px) {
+  .textblock {
+    margin: 60px 5vw;
+  }
+  .imgtext {
+    display: block;
+  }
+  #info {
+    padding: 40vh 5vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .textblock {
+    margin: 60px 1vw;
+  }
+
+  #error {
+    clip-path: polygon(5% 15%, 50% 10%, 95% 15%, 95% 85%, 50% 90%, 5% 85%);
+  }
+}
